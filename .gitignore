@@ -3,6 +3,8 @@
 # dependencies
 2-react-components/node_modules
 2-react-components/dist
+3-counter/node_modules
+3-counter/dist
 
 # testing
 /coverage
