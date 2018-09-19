@@ -1,0 +1,81 @@
+.container {
+  margin-top: "1.4rem";
+  display: flex;
+  flex-direction: row;
+}
+
+.btn {
+  position: relative;
+  display: block;
+  margin: 30px auto;
+  padding: 0;
+  overflow: hidden;
+  border-width: 0;
+  outline: none;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+  background-color: orange;
+  color: #ecf0f1;
+  transition: background-color .3s;
+}
+
+.btn.disabled {
+  background-color: rgba(0, 0, 0, 0.12) !important;
+}
+
+.btn.disabled span {
+  color: rgba(0, 0, 0, 0.26) !important;
+  font-weight: 900 !important;
+}
+
+.btn.reset {
+  background-color: red;
+}
+
+.btn.reset:hover {
+  background-color: darkred;
+}
+
+.btn:hover {
+  background-color: #27ae60;
+}
+
+.btn>* {
+  position: relative;
+}
+
+.btn span {
+  display: block;
+  padding: 12px 24px;
+}
+
+.btn:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 0;
+  padding-top: 0;
+  border-radius: 100%;
+  background-color: rgba(236, 240, 241, .3);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.btn:active:before {
+  width: 120%;
+  padding-top: 120%;
+  transition: width .2s ease-out, padding-top .2s ease-out;
+}
+
+/* Styles, not important */
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
