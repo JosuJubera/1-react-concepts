@@ -10,11 +10,11 @@ class Actions extends Component {
           <span> Add </span>
         </button>
 
-        <button className={styles.btn} onClick={this.props.onSubtract}>
-          <span> Substract </span>
+        <button disabled={this.props.value === 0} className={[styles.btn, this.props.value === 0 ? styles.disabled : ''].join(' ')} onClick={this.props.onSubtract}>
+          <span> Subtract </span>
         </button>
 
-        <button className={[styles.btn, styles.reset, this.props.value === 0 ? styles.disabled : ''].join(' ')} onClick={this.props.onReset}>
+        <button disabled={this.props.value === 0} className={[styles.btn, styles.reset, this.props.value === 0 ? styles.disabled : ''].join(' ')} onClick={this.props.onReset}>
           <span> Reset </span>
         </button>
       </section>
