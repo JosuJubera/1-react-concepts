@@ -5,6 +5,7 @@
 2-react-components/dist
 3-counter/node_modules
 3-counter/dist
+4-react-app-example/node_modules
 
 # testing
 /coverage
